@@ -93,7 +93,7 @@ When using this code or some of our pre-trained vectors for your application, pl
 @article{Sabet2019RobustCE,
   title={Robust Cross-lingual Embeddings from Parallel Sentences},
   author={Ali Sabet and Prakhar Gupta and Jean-Baptiste Cordonnier and Robert West and Martin Jaggi},
-  journal={ArXiv},
+  journal={ArXiv 1912.12481},
   year={2020},
 }
 ```
