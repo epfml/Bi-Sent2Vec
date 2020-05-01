@@ -1,14 +1,14 @@
-# Bi-Sent2vec
+# Bi-Sent2Vec
 
 TLDR: This library provides cross-lingual numerical representations (features) for words, short texts, or sentences, which can be used as input to any machine learning task with applications geared towards cross-lingual word translation, cross-lingual sentence retrieval as well as cross-lingual downstream NLP tasks. The library is a cross-lingual extension of [Sent2Vec](https://github.com/epfml/sent2vec).
 
 ### Table of Contents  
 
 * [Setup and Requirements](#setup-and-requirements)
-* [Using the model](#Using-the-model)
-    - [Downloading Bi-Sent2Vec pre-trained vectors](#Downloading-Bi-Sent2Vec-pre-trained-vectors)
-    - [Train a New Bi-Sent2Vec Model](#Train-a-new-sent2vec-model)
-* [Evaluation](#Evaluation)
+* [Using the model](#using-the-model)
+    - [Downloading Bi-Sent2Vec pre-trained vectors](#downloading-bi-sent2vec-pre-trained-vectors)
+    - [Train a New Bi-Sent2Vec Model](#train-a-new-bi-sent2vec-model)
+* [Evaluation](#evaluation)
 * [References](#references)
 
 # Setup and Requirements
@@ -42,7 +42,7 @@ france_en won_en the_en world_en cup_en ._en <<split>> la_fr france a_fr gagné_
 
 ## Training
 
-Assuming en-fr_sentences.txt is the pre-processed training corpus, here is one example of a command to train a Bi-Sent2Vec model:
+Assuming en-fr_sentences.txt is the pre-processed training corpus, here is an example of a command to train a Bi-Sent2Vec model:
 
     ./fasttext bisent2vec -input en-fr_sentences.txt -output model-en-fr -dim 300 -lr 0.2 -neg 10 -bucket 2000000 -maxVocabSize 750000 -thread 30 -t 0.000005 -epoch 5 -minCount 8 -dropoutK 4 -loss ns -wordNgrams 2 -numCheckPoints 5
 
@@ -85,7 +85,7 @@ Our models are evaluated using the standard evaluation tool in the [MUSE](https:
 # References
 When using this code or some of our pre-trained vectors for your application, please cite the following paper:
 
-  Ali Sabet, Prakhar Gupta, Jean-Baptiste Cordonnier, Robert West, Martin Jaggi Martin Jaggi, [*Robust Cross-lingual Embeddings from Parallel Sentences*](https://arxiv.org/abs/1912.12481)
+  Ali Sabet, Prakhar Gupta, Jean-Baptiste Cordonnier, Robert West, Martin Jaggi [*Robust Cross-lingual Embeddings from Parallel Sentences*](https://arxiv.org/abs/1912.12481)
 
 ```
 @article{Sabet2019RobustCE,
