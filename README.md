@@ -4,7 +4,7 @@ TLDR: This library provides cross-lingual numerical representations (features) f
 
 Bi-Sent2Vec vectors are also well suited to monolingual tasks as indicated by a marked improvement in the monolingual quality of the word embeddings. (For more details, see [paper](https://arxiv.org/abs/1912.12481))
 
-### Table of Contents  
+### Table of Contents
 
 * [Setup and Requirements](#setup-and-requirements)
 * [Using the model](#using-the-model)
@@ -27,9 +27,36 @@ The method uses a simple but efficient  objective to train distributed represent
 
 ## Downloading Bi-Sent2Vec pre-trained vectors
 
-Models trained and tested in the Bi-Sent2Vec paper can be downloaded from the following links(Users are encouraged to add more bi-lingual models to the list provided they have been benchmarked properly)
+Models trained and tested in the Bi-Sent2Vec paper can be downloaded from the following links. Users are encouraged to add more bi-lingual models to the list provided they have been benchmarked properly.
 
---- ADD LINKS HERE ---
+### Unigram
+
+[EN](https://drive.google.com/file/d/1schNkg0OLTrTqA_VSCcpJnczaZbEfUiW/view?usp=sharing)-[DE](https://drive.google.com/file/d/1S76Pf_UByF9vHfGHx3EAP5bB3Vvyi8_l/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1b_q6WCXdQEKz0Grx21mzxVaGqBV7Y5WY/view?usp=sharing)-[ES](https://drive.google.com/file/d/1pEusR2238oJwLmRzC0j7pduaKW6FLzOv/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1Omac6Cbkb7cmyOeTZpyacGOKGHy9ixo8/view?usp=sharing)-[FI](https://drive.google.com/file/d/1rr_ZhDPjp901vGKUuK4gjXEM9aDBDOOD/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1Ny7TDW_1jRZTH327OhrGbSpIPgsSr3LJ/view?usp=sharing)-[FR](https://drive.google.com/file/d/1WTsLmVcjG_M8vwgUvfvM_A1386q7Nv0H/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1dPmM270pUTW2ETl14SfcFFI0hscEeQXO/view?usp=sharing)-[HU](https://drive.google.com/file/d/1aLe8CsB2o0fjmMTonYozcj0V69pPY59_/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1C6e-6qkhsoYjWlJ0OcjWeStOSUvQUOuQ/view?usp=sharing)-[IT](https://drive.google.com/file/d/1_rO75UgpZpug7kzjtho-jkigwl_igFqm/view?usp=sharing)
+
+### Bigram
+
+[EN](https://drive.google.com/file/d/1CI4sFR0Y6v6zHzdaFN17vn9Wo_m1ywno/view?usp=sharing)-[DE](https://drive.google.com/file/d/1HyKS0QpBHd_2pLp_0JxGFDAMASydR5Xe/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1XKk4Vw4ATMcYAhmDl_nUx1HnpIcfuEwX/view?usp=sharing)-[ES](https://drive.google.com/file/d/1oJ2LXUk0CZzwj02sWIVZtsXH6psICOHl/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1q9dn76Sau3ArOEJ-J2mYghAnnoPjb9us/view?usp=sharing)-[FI](https://drive.google.com/file/d/1cqen99e_BNZp13wWGBpJf7x5b-PmHEKl/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1ztCsll3YUUBVMDHTZBPDmNMcZPkQbEu-/view?usp=sharing)-[FR](https://drive.google.com/file/d/1KWuuFpNDOmEXoLvwWU2OastlK5MyIke6/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/15sMJQNm3s6uWh80y2SkxY6hCWnMx5pmx/view?usp=sharing)-[HU](https://drive.google.com/file/d/1K88rEsVM7mrcHZlqwHPvtjWy5JPkIvJ6/view?usp=sharing)
+•
+[EN](https://drive.google.com/file/d/1Iv-vuPWw40mvkbzfRJ7c0EIvvO_VRjT6/view?usp=sharing)-[IT](https://drive.google.com/file/d/1XXDGKQFscr_snJFzGc-aafUVRy_q6r0g/view?usp=sharing)
+
 
 ## Train a New Bi-Sent2Vec Model
 ### Tokenizing and data format
@@ -82,7 +109,7 @@ python vectors_by_lang.py model-en-fr.vec en fr
 This code will create two files model-en-fr_en.vec and model-en-fr_fr.vec in word2vec format containing vectors for English and French respectively.
 
 # Evaluation
-Our models are evaluated using the standard evaluation tool in the [MUSE](https://github.com/facebookresearch/MUSE) repository by Facebook AI Research. 
+Our models are evaluated using the standard evaluation tool in the [MUSE](https://github.com/facebookresearch/MUSE) repository by Facebook AI Research.
 
 # References
 When using this code or some of our pre-trained vectors for your application, please cite the following paper:
