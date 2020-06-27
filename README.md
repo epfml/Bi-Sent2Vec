@@ -112,7 +112,7 @@ This code will create two files model-en-fr_en.vec and model-en-fr_fr.vec in wor
 Our models are evaluated using the standard evaluation tool in the [MUSE](https://github.com/facebookresearch/MUSE) repository by Facebook AI Research.
 
 # References
-When using this code or some of our pre-trained vectors for your application, please cite the following paper:
+When using this code or some of our pretrained vectors for your application, please cite the following paper:
 
   Ali Sabet, Prakhar Gupta, Jean-Baptiste Cordonnier, Robert West, Martin Jaggi [*Robust Cross-lingual Embeddings from Parallel Sentences*](https://arxiv.org/abs/1912.12481)
 
